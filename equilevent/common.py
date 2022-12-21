@@ -207,5 +207,5 @@ def addAssign(driver, courseName, assName):
     #Submit and return
     clickButton(driver,"id_submitbutton2","id")
     time.sleep(4)
-intp = input("xin cai ten: ")
-intp2 = input("not cai nua di: ")
+intp = "equilivent-chih-testing"
+
