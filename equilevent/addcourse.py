@@ -16,6 +16,7 @@ goToCourse(driver,intp)
 
 goToCourse(driver,intp)
 enrol2(driver)
+addAssign(driver,intp,"new name")
 logout(driver)
 
 time.sleep(1)

@@ -100,6 +100,13 @@ def goToCourse(driver, courseName):
         EC.element_to_be_clickable((By.PARTIAL_LINK_TEXT,courseName))
     )
 
+    try:
+        WebDriverWait(driver, 3).until(
+                    EC.presence_of_element_located((By.XPATH, "/html/body/span/div/div/div[4]/button[2]"))
+                )
+        driver.find_element(By.XPATH,"/html/body/span/div/div/div[4]/button[2]").click()
+    except:
+        print("skip")
     driver.find_element(By.PARTIAL_LINK_TEXT,courseName).click() 
 
 def enrol2(driver):
